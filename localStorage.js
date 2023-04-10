@@ -5,4 +5,8 @@ function store() {
     let upperCase = /[A-Z]/g;
     let lowerCase = /[a-z]/g;
     let numbers = /[0-9]/g;
+
+    if (userName.value.length == 0) {
+        alert('Please fill in UserName or E-Mail Address');
+    }
 }
