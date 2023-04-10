@@ -12,5 +12,9 @@ function store() {
         alert('Please enter in Password');
     } else if (userName.value.length == 0 && password.value.length == 0) {
         alert('Please enter UserName and Password');
+    } else {
+        localStorage.setItem('password', userName.value);
+        localStorage.setItem('password', password.value);
+        alert('Your account has been created');
     }
 }
