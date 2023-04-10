@@ -17,16 +17,20 @@
 
             <label for="SignUpPassword">Password</label>
             <input type="password" id="SignUpPassword" placeholder="Enter Password" required>
+
+            <button id="rgstrButton" type="submit" onclick="userSignUp()">Register</button>
         </form>
     </div>
     <div class="login-form">
         <form name="login">
             <h1>USER-LOGIN</h1>
             <label for="loginUserName">Email</label>
-            <input type="email" id="loginUserName" placeholder="Username" required>
+            <input type="email" id="loginUserName" placeholder="Enter Username" required>
 
-            <label for="userPw">Password</label>
-            <input type="password" id="userPw" placeholder="Password" required>
+            <label for="loginUserPassword">Password</label>
+            <input type="password" id="loginUserPassword" placeholder="Enter Password" required>
+
+            <button id="loginButton" type="submit" onclick="userLogin()">Login</button>
         </form>
     </div>
 </body>

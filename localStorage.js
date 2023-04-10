@@ -1,7 +1,7 @@
 function userSignUp() {
 
-    let userName = document.getElementById('userName');
-    let password = document.getElementById('password');
+    let userName = document.getElementById('SignUpUserName');
+    let password = document.getElementById('SignUpPassword');
     // let upperCase = /[A-Z]/g;
     // let lowerCase = /[a-z]/g;
     // let numbers = /[0-9]/g;
@@ -20,11 +20,11 @@ function userSignUp() {
 }
 
 function userLogin() {
-    let locallyStoresUserName = localStorage.getItem('userName');
-    let locallyStoresPassword = localStorage.getItem('password');
+    let locallyStoresUserName = localStorage.getItem('SignUpUserName');
+    let locallyStoresPassword = localStorage.getItem('SignUpPassword');
 
-    let loginUserName = document.getElementById('userName');
-    let loginPassword = document.getElementById('password');
+    let loginUserName = document.getElementById('loginUserName');
+    let loginPassword = document.getElementById('loginUserPassword');
 
     if (locallyStoresUserName.value == loginUserName && locallyStoresPassword == loginPassword) {
         alert('User Login Successfully');
