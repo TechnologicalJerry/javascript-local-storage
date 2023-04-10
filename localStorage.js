@@ -20,5 +20,16 @@ function userSignUp() {
 }
 
 function userLogin() {
+    let locallyStoresUserName = localStorage.getItem('userName');
+    let locallyStoresPassword = localStorage.getItem('password');
+
+    let loginUserName = document.getElementById('userName');
+    let loginPassword = document.getElementById('password');
+
+    if (locallyStoresUserName.value == loginUserName && locallyStoresPassword == loginPassword) {
+        alert('User Login Successfully');
+    } else {
+        alert('User Login Un-Successfully');
+    }
 
 }
