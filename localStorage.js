@@ -1,4 +1,4 @@
-function store() {
+function userSignUp() {
 
     let userName = document.getElementById('userName');
     let password = document.getElementById('password');
@@ -17,4 +17,8 @@ function store() {
         localStorage.setItem('password', password.value);
         alert('Your account has been created');
     }
+}
+
+function userLogin() {
+
 }
