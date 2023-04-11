@@ -17,6 +17,9 @@ function userSignUp() {
         alert('Max values 12 please');
     } else if (!password.value.match(upperCase)) {
         alert('Please add 1 Uppercase letter');
+    } else if (!password.value.match(lowerCase)) {
+        alert('Please add 1 lovercase letter');
+
     } else {
         localStorage.setItem('password', userName.value);
         localStorage.setItem('password', password.value);
