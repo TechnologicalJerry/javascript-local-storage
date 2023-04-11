@@ -3,6 +3,10 @@ function userSignUp() {
     let userName = document.getElementById('SignUpUserName');
     let password = document.getElementById('SignUpPassword');
 
+    let lowerCase = /[a-z]/g;
+    let upperCase = /[A-Z]/g;
+    let numbers = /[0-9]/g;
+
     if (userName.value.length == 0) {
         alert('Please enter UserName or E-Mail Address');
     } else if (password.value.length == 0) {
