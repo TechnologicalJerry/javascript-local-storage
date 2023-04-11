@@ -9,6 +9,8 @@ function userSignUp() {
         alert('Please enter in Password');
     } else if (userName.value.length == 0 && password.value.length == 0) {
         alert('Please enter UserName and Password');
+    } else if (password.value.length > 12) {
+        alert('Max 12 please');
     } else {
         localStorage.setItem('password', userName.value);
         localStorage.setItem('password', password.value);
