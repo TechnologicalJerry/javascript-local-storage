@@ -3,8 +3,8 @@ function userSignUp() {
     let userName = document.getElementById('SignUpUserName');
     let password = document.getElementById('SignUpPassword');
 
-    let lowerCase = /[a-z]/g;
     let upperCase = /[A-Z]/g;
+    let lowerCase = /[a-z]/g;
     let numbers = /[0-9]/g;
 
     if (userName.value.length == 0) {
@@ -15,6 +15,8 @@ function userSignUp() {
         alert('Please enter UserName and Password');
     } else if (password.value.length > 12) {
         alert('Max values 12 please');
+    } else if (!password.value.match(upperCase)) {
+        alert('Please add 1 Uppercase letter');
     } else {
         localStorage.setItem('password', userName.value);
         localStorage.setItem('password', password.value);
